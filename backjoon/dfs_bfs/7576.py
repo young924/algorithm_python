@@ -17,7 +17,6 @@ def bfs(starts):
     queue = deque(starts)
 
     while queue:
-        #print(box)
         queue_size = len(queue)
 
         while (queue_size > 0):
