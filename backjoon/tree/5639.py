@@ -58,8 +58,6 @@ while True:
         break
     pre_order.append(val)
 
-print(pre_order)
-
 def post_order(start, end):
     if start >= end:
         return
