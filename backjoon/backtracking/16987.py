@@ -26,13 +26,10 @@ def hit(i, cnt):
 
         eggs[i][0] -= eggs[j][1]
         eggs[j][0] -= eggs[i][1]
-        # print('hit', i, j)
 
         if eggs[i][0] <= 0 and eggs[j][0] <= 0:
-            # print('calling hit', i+1, 'cnt', cnt+2)
             maxCnt = max(hit(i+1, cnt+2), maxCnt)
         elif eggs[i][0] <= 0 or eggs[j][0] <= 0:
-            # print('calling hit', i+1, 'cnt', cnt+1)
             maxCnt = max(hit(i+1, cnt+1), maxCnt)
         else:
             maxCnt = max(hit(i+1, cnt), maxCnt)
